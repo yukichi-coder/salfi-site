@@ -1,0 +1,6 @@
+body { font-family: -apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.8; color: #1d2433; background: #fff; }
+h1 { font-size: 1.5rem; line-height: 1.4; } h2 { font-size: 1.15rem; margin-top: 2em; }
+a { color: #1f4e79; } small, .meta { color: #5b6475; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; } th, td { border: 1px solid #d7dce5; padding: 6px 8px; text-align: left; vertical-align: top; }
+nav { font-size: .9rem; margin-bottom: 2em; } footer { margin-top: 4em; font-size: .85rem; color: #5b6475; border-top: 1px solid #d7dce5; padding-top: 1em; }
+.note { background: #f3f6fb; border-left: 4px solid #1f4e79; padding: .6em 1em; }
