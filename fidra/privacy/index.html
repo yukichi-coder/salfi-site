@@ -8,11 +8,9 @@
 </head>
 <body>
 <nav><a href="../../">SALFI apps</a> › Fidra – Contract Check</nav>
-<!-- TODO: link "Fidra – Contract Check" to ../ once an app page exists at fidra/. -->
 <h1>Fidra – Contract Check: Privacy Policy</h1>
-<p class="meta">Effective date: TODO (to be set when Yuki decides to publish)</p>
+<p class="meta">Effective date: 1 November 2026</p>
 <p>This policy explains what happens to the information you use in Fidra – Contract Check (“the app”), which is developed by Yuki Shiono (an individual, “we”). It describes the app as it is currently built.</p>
-<p class="note"><strong>TODO:</strong> This is a draft written from the app’s current source code. Items marked “TODO” are not yet decided or cannot be confirmed from the code, and must be settled before this page is published.</p>
 
 <h2>1. Our approach</h2>
 <ul>
@@ -32,7 +30,7 @@
 <tr><td>Report, check-up score and hand-off prompt</td><td>Shown on screen and kept in memory only. The hand-off prompt is copied to your clipboard only when you tap the copy button.</td></tr>
 <tr><td>Age confirmation and consent</td><td>Kept in memory only. Consent applies to one version of one document; if the text or the hidden details change, you need to agree again.</td></tr>
 </table>
-<p><strong>TODO:</strong> The app’s design plans an on-device history and .txt / PDF export, and storing the API key in the iOS Keychain / Android Keystore. None of these are in the current code. Update this section if they are added.</p>
+<p>The app does not keep a history of your documents or reports, and it does not save them to files. It has no export or sharing feature. The only content the app places outside itself is the hand-off prompt, which is copied to your clipboard when you tap the copy button (see section 6). The app does not store your API key in the device’s keychain or any other storage. If we add history, export or saved keys in a later version, we will update this policy before that version is released.</p>
 
 <h2>3. If you use Ollama Cloud</h2>
 <ol>
@@ -42,16 +40,15 @@
 <li><strong>How Ollama handles it:</strong> Ollama states that prompts and responses for cloud models are processed transiently, are not stored beyond the time required to fulfil the request, and are not used to train AI models (<a href="https://ollama.com/privacy" target="_blank" rel="noopener">Ollama Privacy Policy</a>, checked on 31 October 2026). Your Ollama account is governed by Ollama’s own terms and privacy policy.</li>
 <li><strong>Cancelling:</strong> you can cancel a review in progress, but this cannot recall text that has already been sent.</li>
 </ol>
-<p>The app also offers a “Mock” option that works offline and sends nothing.</p>
-<p><strong>TODO:</strong> Whether Mock remains in the released app, and which provider is the default at release.</p>
+<p>In the app released on the App Store and Google Play, Ollama Cloud is the only review option and is selected by default. Nothing is sent until you have entered your API key and a model name and agreed on the confirmation screen for that document. Without these, the app can still read your document and hide personal details on your device, but it does not send anything.</p>
 
 <h2>4. AI training</h2>
 <p>We do not train AI models, and we never receive your text. For how Ollama treats your text, see section 3.</p>
 
 <h2>5. Information we receive</h2>
 <p>None through the app. If you email us, we receive your email address and what you write, and use them only to reply.</p>
-<p><strong>TODO:</strong> Paid features are planned as a one-time purchase through the App Store / Google Play. Payment is not in the current code. When it is added, describe what Apple / Google share with us (if anything).</p>
-<p><strong>TODO:</strong> The iOS / Android project files are not in the source repository yet. Confirm that no analytics or crash-reporting SDK is added at the native layer before publishing.</p>
+<p><strong>Payments:</strong> the app itself does not take payments. If you pay for the app or a feature, the payment is handled by Apple (App Store) or Google (Google Play) under their own terms and privacy policies. We do not receive your card or bank details.</p>
+<p><strong>Analytics and crash reports:</strong> the app contains no advertising, analytics or crash-reporting tools of its own. Apple and Google may give us summary statistics and crash reports through their developer consoles if you have chosen to share such data in your device settings. These are handled under Apple’s and Google’s own privacy policies and do not include your contract, report or API key.</p>
 
 <h2>6. Copying to your own AI assistant</h2>
 <p>The app can build a prompt so you can continue in an AI assistant of your choice. The app does not send it anywhere: it is copied to your clipboard only when you tap the button, and you decide where to paste it. Once pasted, that service’s own privacy policy applies.</p>
@@ -64,7 +61,7 @@
 
 <h2>9. Your rights</h2>
 <p>We do not hold your contract, report or key, so there is nothing for us to access, correct or delete. For information held by Ollama, contact Ollama as described in its privacy policy. For anything else, contact us below.</p>
-<p><strong>TODO:</strong> Whether to add UK GDPR details (controller identity and address, lawful basis, how to complain to the ICO). Not decided.</p>
+<p>For information we receive from you by email, the controller is Yuki Shiono, contactable at the address below. We use it only to reply to you. If you are in the United Kingdom and are unhappy with how we have handled your information, you can complain to the Information Commissioner’s Office (<a href="https://ico.org.uk/" target="_blank" rel="noopener">ico.org.uk</a>). We would appreciate the chance to deal with your concern first, so please contact us.</p>
 
 <h2>10. Contact</h2>
 <p><a href="mailto:support@salfi.org">support@salfi.org</a></p>
