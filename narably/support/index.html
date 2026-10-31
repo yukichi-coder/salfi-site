@@ -35,11 +35,11 @@
 <p>画像を見られないモデルには、画像を送りません。</p>
 
 <h2>音声入力</h2>
-<p>送るボタンの左のマイクを押して話すと、話した言葉が入力欄に入ります（自動では送りません）。もう一度押すと止まります。最初に、マイクと音声認識の許可を求められます。音声は iPhone の中で文字にし、運営者にも Ollama にも送りません。端末の中で文字にできない機種では、マイクのボタンは出ません。</p>
+<p>送るボタンの左のマイクを押して話すと、話した言葉が入力欄に入ります（自動では送りません）。アプリの表示の言語（日本語か英語）で聞き取ります。もう一度押すと止まります。最初に、マイクと音声認識の許可を求められます。音声は iPhone の中で文字にし、運営者にも Ollama にも送りません。端末の中で文字にできない機種では、マイクのボタンは出ません。</p>
 
 <h2>Narably Pro と無料体験</h2>
 <ul>
-  <li>Narably Pro は 1 年ごとの自動更新のサブスクリプションです。3 つ以上のモデルでのならべる、チーム、添削、討論、振り分け、ブラインド比較、すべての配色が使えます。</li>
+  <li>Narably Pro は 1 年ごとの自動更新のサブスクリプションです。3 つ以上のモデルでのならべる、チーム、添削、討論、振り分け、ブラインド比較、すべての配色、ウェブ検索（出典つき）、送る前のプロンプトの最適化、@ で会話の途中から別のモデルを呼ぶ機能、長い会話の要約が使えます。</li>
   <li>値段は、アメリカでは年 US$9.99 です。ほかの国や地域の値段は App Store が決めた現地の値段で、購入画面と App Store に表示されます。</li>
   <li>はじめての方は、1 週間の無料体験を使えることがあります。使えるかどうかは購入画面に表示されます。体験の終わる 24 時間前までに解約しないと、体験のあと年額の料金がかかります。</li>
   <li>Pro の機能を選ぶと購入画面が開きます。設定の「Narably Pro」→「Pro を見る」からも開けます。</li>
@@ -68,6 +68,8 @@
   <dd>「購入を復元」を押してください。購入に使った Apple アカウントでサインインしているかも確かめてください。</dd>
   <dt>Narably は Ollama の公式アプリですか</dt>
   <dd>いいえ。Ollama とは関係のない、個人が作った独立したアプリです。</dd>
+  <dt>英語で使えますか</dt>
+  <dd>はい。アプリの表示は iPhone の言語に合わせて日本語か英語になります。設定の「言語」でいつでも変えられます。英語で表示しているときは、AI への指示も英語で送り、質問と同じ言語で答えるよう伝えます。</dd>
 </dl>
 
 <h2>お問い合わせ</h2>
@@ -96,38 +98,38 @@
   <li>Paste your key and tap Save. The App checks the key by sending one message to a small model before saving it.</li>
   <li>To change or remove the key later, open the menu (top left) → Settings → API key.</li>
 </ol>
-<p>(Button and screen names on this page are translations; the App's screens may show them in Japanese.)</p>
+<p>The App is shown in English or Japanese to match your iPhone's language. You can change it anytime under Settings → Language.</p>
 <p>Your key is stored only in your iPhone's secure storage (Keychain), is never shown on screen, and is never sent to the operator.</p>
 
 <h2>Modes</h2>
-<p>Tap the model label below the input field to choose models and a mode.</p>
+<p>Tap the model label below the message box to open Models and mode.</p>
 <ul>
-  <li><strong>Single</strong> (free): chat with one model. You can switch models along the way.</li>
-  <li><strong>Side by side</strong> (free for up to 2 models; Pro for 3 or more): send the same question to the selected models at once and compare the answers. You can also summarize them.</li>
+  <li><strong>Solo</strong> (free): chat with one model. You can switch models along the way.</li>
+  <li><strong>Side by Side</strong> (free for up to 2 models; Pro for 3 or more): send the same question to the selected models at once and compare the answers. You can also summarize them.</li>
   <li><strong>Team</strong> (Pro): give 2–5 members roles and run them in order; each receives the previous member's output.</li>
   <li><strong>Proofread</strong> (Pro): the first model answers, the second points out mistakes and gaps, and a final corrected answer is produced.</li>
   <li><strong>Debate</strong> (Pro): two models argue for and against for 1–3 rounds, then a moderator gives a conclusion.</li>
-  <li><strong>Routing</strong> (Pro): looks at the question (image, code, math, writing) and sends it to the candidate model that suits it best.</li>
-  <li><strong>Blind comparison</strong> (Pro): shows 2–4 answers with the model names hidden; pick the best one to reveal them. Results are counted only on this device under "Blind comparison results" in Settings.</li>
+  <li><strong>Auto-Route</strong> (Pro): looks at the question (image, code, math, writing) and sends it to the candidate model that suits it best.</li>
+  <li><strong>Blind</strong> (Pro): shows 2–4 answers with the model names hidden; pick the best one to reveal them. Results are counted only on this device under "Blind comparison results" in Settings.</li>
 </ul>
 <p>Images are not sent to models that cannot read images.</p>
 
 <h2>Voice input</h2>
-<p>Tap the microphone to the left of the send button and speak; your words go into the input field (nothing is sent automatically). Tap again to stop. You will be asked to allow microphone and speech recognition access the first time. Speech is transcribed on your iPhone and never sent to the operator or to Ollama. On devices that cannot transcribe on-device, the microphone button is not shown.</p>
+<p>Tap the microphone to the left of the send button and speak; your words go into the message box (nothing is sent automatically). Speech is recognized in the App's language (English or Japanese). Tap again to stop. You will be asked to allow microphone and speech recognition access the first time. Speech is transcribed on your iPhone and never sent to the operator or to Ollama. On devices that cannot transcribe on-device, the microphone button is not shown.</p>
 
 <h2>Narably Pro and the free trial</h2>
 <ul>
-  <li>Narably Pro is an auto-renewing yearly subscription that unlocks Side by side with 3 or more models, Team, Proofread, Debate, Routing, Blind comparison, and all color palettes.</li>
+  <li>Narably Pro is an auto-renewing yearly subscription that unlocks Side by Side with 3 or more models, Team, Proofread, Debate, Auto-Route, Blind, all color themes, web search with sources, prompt optimization before sending, bringing in another model mid-chat with @, and summarizing long chats to save on usage.</li>
   <li>The price is US$9.99 per year in the United States. In other countries and regions, the local price set by the App Store is shown on the purchase screen and in the App Store.</li>
   <li>New subscribers may be eligible for a 1-week free trial; eligibility is shown on the purchase screen. Unless you cancel at least 24 hours before the trial ends, the yearly price is charged when the trial ends.</li>
   <li>The purchase screen opens when you choose a Pro feature, or from Settings → Narably Pro → See Pro.</li>
 </ul>
 
 <h2>Restoring purchases</h2>
-<p>After changing devices or reinstalling, stay signed in with the Apple Account you purchased with and tap Settings → Narably Pro → Restore purchases. You can also restore from the purchase screen.</p>
+<p>After changing devices or reinstalling, stay signed in with the Apple Account you purchased with and tap Settings → Narably Pro → Restore Purchases. You can also restore from the purchase screen.</p>
 
 <h2>How to cancel</h2>
-<p>Open iPhone Settings → your name (Apple Account) → Subscriptions → Narably Pro and turn off auto-renew. You can also open it from Settings → Narably Pro → Manage subscription in the App. Pro stays available until the end of the current period. Deleting the App does not cancel the subscription. Refunds are requested from Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+<p>Open iPhone Settings → your name (Apple Account) → Subscriptions → Narably Pro and turn off auto-renew. You can also open it from Settings → Narably Pro → Manage Subscription in the App. Pro stays available until the end of the current period. Deleting the App does not cancel the subscription. Refunds are requested from Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
 
 <h2>AI usage fees are separate</h2>
 <p><strong>AI usage fees (Ollama) are not included in Narably Pro.</strong> They depend on your Ollama plan and are paid directly to Ollama. Narably shows an estimate of your remaining Ollama usage next to Settings in the menu; check the Ollama website for the exact amount. Modes that send to several models use more.</p>
@@ -139,13 +141,15 @@
   <dt>No answer comes back, or it stops midway</dt>
   <dd>Check your connection and your remaining Ollama usage. Some models can be slow when busy.</dd>
   <dt>Where are my conversations stored?</dt>
-  <dd>Only on this iPhone. They are never sent to the operator. You can delete them all under "Saved conversations" in Settings.</dd>
+  <dd>Only on this iPhone. They are never sent to the operator. You can delete them all under "Chat storage" in Settings.</dd>
   <dt>Is there an iPad, Android, or web version?</dt>
   <dd>Not at the moment; Narably is iPhone only.</dd>
   <dt>I bought Pro but can't use it</dt>
-  <dd>Tap Restore purchases, and make sure you are signed in with the Apple Account you purchased with.</dd>
+  <dd>Tap Restore Purchases, and make sure you are signed in with the Apple Account you purchased with.</dd>
   <dt>Is Narably an official Ollama app?</dt>
   <dd>No. It is an independent app made by an individual and is not affiliated with Ollama.</dd>
+  <dt>Can I use the App in English?</dt>
+  <dd>Yes. The App is shown in English or Japanese to match your iPhone's language, and you can change it anytime under Settings → Language. In English, the App's instructions to the AI are in English too, and models are asked to reply in the language of your question.</dd>
 </dl>
 
 <h2>Contact</h2>
