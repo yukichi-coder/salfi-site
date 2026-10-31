@@ -23,6 +23,9 @@
 <p>質問や添付した画像・ファイルの中身は、利用者が入れたキーで、利用者が選んだ AI のモデルへ、端末から Ollama（<a href="https://ollama.com">ollama.com</a>）に直接送られます。運営者のサーバーは通りません。答えも Ollama から端末に直接届きます。</p>
 <p>キーの確認、モデルの一覧と対応の確認、残高の表示のためにも、端末から Ollama に直接つなぎます。Ollama に送られたデータの扱いには、<a href="https://ollama.com/privacy">Ollama のプライバシーポリシー</a>と利用規約が適用されます。AI の答えには誤りが含まれることがあります。</p>
 
+<h2>ウェブ検索</h2>
+<p>ウェブ検索をオンにしたとき、または「いまの情報が要りそうな質問は自動でウェブ検索する」設定がオンで、天気やニュースなどの質問をしたときは、質問の文（先頭の 300 字まで。今日・明日などの日付を足すことがあります）が、利用者のキーで端末から Ollama のウェブ検索（Ollama Web Search API）に直接送られます。添付した写真やファイルの中身は検索には送りません。検索の結果（ページの題名・URL・抜き出し）は、答えを作るために、選んだ AI のモデルへ質問と一緒に送られます。検索にも Ollama の利用料がかかり、データの扱いには Ollama のプライバシーポリシーと利用規約が適用されます。自動の検索は設定の「ウェブ検索」で切れます。</p>
+
 <h2>音声入力</h2>
 <p>マイクで話した言葉は、iPhone の音声認識を使って<strong>端末の中で</strong>文字にします。音声は運営者にも Ollama にも送りません。文字になった文は入力欄に入るだけで、送るかどうかは利用者が決めます。端末の中で文字にできない機種では、マイクのボタンを出しません。</p>
 
@@ -59,6 +62,8 @@
 <h2>Where conversations are sent (Ollama)</h2>
 <p>The content of your questions and attachments is sent directly from your device to Ollama (<a href="https://ollama.com">ollama.com</a>), to the AI models you choose, using the key you entered. It never passes through an operator server, and answers come back from Ollama directly to your device.</p>
 <p>The App also connects directly to Ollama to check your key, list models and their capabilities, and show your balance. <a href="https://ollama.com/privacy">Ollama's privacy policy</a> and terms apply to data sent to Ollama. AI answers may contain mistakes.</p>
+<h2>Web search</h2>
+<p>When you turn on web search, or when the setting to search the web automatically for questions that need current information is on and you ask about things like weather or news, the text of your question (up to the first 300 characters, sometimes with a date added for words like "today" or "tomorrow") is sent directly from your device to Ollama's web search (Ollama Web Search API) using your key. The content of attached photos and files is not sent to search. The search results (page titles, URLs, and excerpts) are sent with your question to the AI model you chose so it can answer. Searches also count toward your Ollama usage, and Ollama's privacy policy and terms apply. You can turn off automatic search under "Web search" in Settings.</p>
 <h2>Voice input</h2>
 <p>What you say into the microphone is turned into text <strong>on your device</strong> using iPhone speech recognition. Audio is never sent to the operator or to Ollama. The text only goes into the input field; you decide whether to send it. On devices that cannot transcribe on-device, the microphone button is not shown.</p>
 <h2>Camera and photos</h2>
