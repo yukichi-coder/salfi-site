@@ -6,7 +6,7 @@ SALFI のアプリのサポート・プライバシーポリシー・利用規�
 - 勝手にアイドル資格試験！: `katte-shikaku/idol/`（`support/`、`privacy/`、`terms/`）
 - まほうのよみときドリル: `yomitoki/drill/`（`support/`、`privacy/`、`terms/`）
 - Fourgive: `fourgive/`（`support/`、`privacy/`、`terms/`）。シリーズではない単独のアプリなので、種類の階層は置かない
-- Narably: `narably/`（`privacy/`、`terms/`）。単独のアプリ。サポートページはまだ無い（連絡先はメール）。アプリの購入画面が `https://apps.salfi.org/narably/terms/` と `/privacy/` を開く
+- Narably: `narably/`（`support/`、`privacy/`、`terms/`）。単独のアプリ。アプリの購入画面が `https://apps.salfi.org/narably/terms/` と `/privacy/` を、設定が `/support/` も開く。値段はアメリカ基準の年 US$9.99（ほかの国は App Store の現地の値段）。サポートページの説明は narabe-chat の画面の文言と合わせる
 - 元の下書き（勝手にアイドル資格試験！）: private リポジトリ `katte-shikaku` の `docs/legal/`
 - 元の下書き（まほうのよみときドリル）: private リポジトリ `yomitoki-drill` の `site/`（正本。直すときは向こうを直して写す）
 - 元の下書き（Fourgive）: プライバシーポリシーの正本は private リポジトリ `fourgive` の `fourgive-web/privacy.html`。プライバシー・サポートは旧 `yukichi-coder/fourgive-site` から移した
