@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Fidra – Contract Check</title>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<nav><a href="../../">SALFI apps</a> › Fidra – Contract Check</nav>
+<h1>Fidra – Contract Check: Privacy Policy</h1>
+<p class="meta">Effective date: 1 November 2026</p>
+<p>This policy explains what happens to the information you use in Fidra – Contract Check (“the app”), which is developed by Yuki Shiono (an individual, “we”). It describes the app as it is currently built.</p>
+
+<h2>1. Our approach</h2>
+<ul>
+<li>We do not run a server for this app. We (the developer) never receive your contract, your report or your API key.</li>
+<li>Reading documents (OCR) and hiding personal details happen on your device.</li>
+<li>Your contract text is sent off the device only if you choose Ollama Cloud, enter your own API key and agree on the confirmation screen for that document. Before it is sent, the personal details you approved are hidden.</li>
+<li>The app contains no advertising, analytics or crash-reporting tools.</li>
+</ul>
+
+<h2>2. Information handled only on your device</h2>
+<table>
+<tr><th>Information</th><th>How it is handled</th></tr>
+<tr><td>Images and PDF files you choose</td><td>Read in the app’s memory. Text is extracted on your device with Tesseract.js (English) and PDF.js, up to 10 PDF pages. The OCR files are bundled with the app and are not downloaded from the internet. Files are not uploaded.</td></tr>
+<tr><td>Contract text (pasted, or produced by OCR and edited by you)</td><td>Kept in the app’s memory while you use it. It is not saved to storage by the app.</td></tr>
+<tr><td>Hidden personal details</td><td>Before anything is sent, the app automatically detects and hides UK postcodes, phone numbers, email addresses, National Insurance numbers, sort codes and bank account numbers, and vehicle registrations. Names, addresses and company names are hidden only when you mark them yourself. You can review and change what is hidden. Detection is not perfect, so please check the text before sending.</td></tr>
+<tr><td>Your Ollama API key</td><td>Kept only in the app’s memory while it is open, entered in a hidden field. The app does not save it, display it or write it to logs, and it is gone when the app is closed or reloaded.</td></tr>
+<tr><td>Report, check-up score and hand-off prompt</td><td>Shown on screen and kept in memory only. The hand-off prompt is copied to your clipboard only when you tap the copy button.</td></tr>
+<tr><td>Age confirmation and consent</td><td>Kept in memory only. Consent applies to one version of one document; if the text or the hidden details change, you need to agree again.</td></tr>
+</table>
+<p>The app does not keep a history of your documents or reports, and it does not save them to files. It has no export or sharing feature. The only content the app places outside itself is the hand-off prompt, which is copied to your clipboard when you tap the copy button (see section 6). The app does not store your API key in the device’s keychain or any other storage. If we add history, export or saved keys in a later version, we will update this policy before that version is released.</p>
+
+<h2>3. If you use Ollama Cloud</h2>
+<ol>
+<li><strong>What is sent:</strong> the contract text with the personal details you approved hidden, fixed instructions from the app, and the model name you chose. Your own API key is sent to authenticate the request. If Ollama’s answer is not in the expected format, the app sends the same request once more (at most two requests per review).</li>
+<li><strong>Where it is sent:</strong> directly from your device to Ollama, Inc. at <code>https://ollama.com</code> (<code>/api/chat</code>). It does not pass through any server of ours. In the app for iOS and Android, the request is made by the operating system’s networking and is limited to that address.</li>
+<li><strong>Location:</strong> Ollama states that it hosts models mainly in the United States and may route requests to Europe for extra capacity (<a href="https://ollama.com/pricing" target="_blank" rel="noopener">Ollama pricing page, Privacy section</a>, checked on 31 October 2026).</li>
+<li><strong>How Ollama handles it:</strong> Ollama states that prompts and responses for cloud models are processed transiently, are not stored beyond the time required to fulfil the request, and are not used to train AI models (<a href="https://ollama.com/privacy" target="_blank" rel="noopener">Ollama Privacy Policy</a>, checked on 31 October 2026). Your Ollama account is governed by Ollama’s own terms and privacy policy.</li>
+<li><strong>Cancelling:</strong> you can cancel a review in progress, but this cannot recall text that has already been sent.</li>
+</ol>
+<p>In the app released on the App Store and Google Play, Ollama Cloud is the only review option and is selected by default. Nothing is sent until you have entered your API key and a model name and agreed on the confirmation screen for that document. Without these, the app can still read your document and hide personal details on your device, but it does not send anything.</p>
+
+<h2>4. AI training</h2>
+<p>We do not train AI models, and we never receive your text. For how Ollama treats your text, see section 3.</p>
+
+<h2>5. Information we receive</h2>
+<p>None through the app. If you email us, we receive your email address and what you write, and use them only to reply.</p>
+<p><strong>Payments:</strong> the app itself does not take payments. If you pay for the app or a feature, the payment is handled by Apple (App Store) or Google (Google Play) under their own terms and privacy policies. We do not receive your card or bank details.</p>
+<p><strong>Analytics and crash reports:</strong> the app contains no advertising, analytics or crash-reporting tools of its own. Apple and Google may give us summary statistics and crash reports through their developer consoles if you have chosen to share such data in your device settings. These are handled under Apple’s and Google’s own privacy policies and do not include your contract, report or API key.</p>
+
+<h2>6. Copying to your own AI assistant</h2>
+<p>The app can build a prompt so you can continue in an AI assistant of your choice. The app does not send it anywhere: it is copied to your clipboard only when you tap the button, and you decide where to paste it. Once pasted, that service’s own privacy policy applies.</p>
+
+<h2>7. Third parties</h2>
+<p>We do not sell or share your information. The only third party the app sends contract text to is Ollama, as described in section 3, and only when you choose to.</p>
+
+<h2>8. Age</h2>
+<p>The app is for people aged 18 or over. Before you can enter a document, you must confirm that you are 18 or older. The app is not directed at children.</p>
+
+<h2>9. Your rights</h2>
+<p>We do not hold your contract, report or key, so there is nothing for us to access, correct or delete. For information held by Ollama, contact Ollama as described in its privacy policy. For anything else, contact us below.</p>
+<p>For information we receive from you by email, the controller is Yuki Shiono, contactable at the address below. We use it only to reply to you. If you are in the United Kingdom and are unhappy with how we have handled your information, you can complain to the Information Commissioner’s Office (<a href="https://ico.org.uk/" target="_blank" rel="noopener">ico.org.uk</a>). We would appreciate the chance to deal with your concern first, so please contact us.</p>
+
+<h2>10. Contact</h2>
+<p><a href="mailto:support@salfi.org">support@salfi.org</a></p>
+
+<h2>11. Changes</h2>
+<p>If we change this policy, we will update this page and its effective date.</p>
+
+<footer>Operator: Yuki Shiono (individual) / Contact: <a href="mailto:support@salfi.org">support@salfi.org</a></footer>
+</body>
+</html>
