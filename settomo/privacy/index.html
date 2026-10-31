@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Settomo プライバシーポリシー / Privacy Policy</title>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<nav><a href="../../">SALFI のアプリ</a> › <a href="../">Settomo</a></nav>
+<h1>Settomo プライバシーポリシー</h1>
+<p class="meta">最終更新: 2026-10-31</p>
+<p>Settomo（以下「本アプリ」）は、Web の管理画面がある機器（ルーター、NAS、カメラ、プリンターなど）の設定を手伝うアプリです。このページでは、本アプリが扱う情報と、その行き先を説明します。本アプリにアカウント登録はなく、氏名・メールアドレス・電話番号・位置情報は集めません。</p>
+
+<h2>1. 端末の中だけに保存するもの</h2>
+<p>次のものは、利用者の端末の中だけに保存し、運営者には送りません。アプリを削除すると消えます。</p>
+<ul>
+  <li><strong>機器のログイン情報</strong>（保存を選んだときだけ）: iPhone・iPad はキーチェーン、Mac は OS の暗号化された保管庫に保存します。AI・記録・報告には渡しません。</li>
+  <li><strong>中継サーバーの接続コード</strong>: キーチェーン（Mac は OS の暗号化された保管庫）に保存します。</li>
+  <li><strong>機器の一覧と、診断・作業の記録</strong>（機器の名前・アドレス、読み取った設定の値、変えた値と変える前の値、復旧カード）。</li>
+  <li><strong>機器の設定のバックアップ</strong>: 機器が渡したファイルを、アプリの中に保存します。Wi-Fi の鍵などを含むことがあるため、iPhone・iPad では、端末のロック中は読めない保護をかけ、iCloud などのバックアップから外しています。</li>
+  <li><strong>取り込んだマニュアルの文字</strong>（PDF または撮影したページから起こした文字）。</li>
+</ul>
+
+<h2>2. AI に送るもの（中継サーバーと OpenRouter 経由）</h2>
+<p>本アプリは、画面の案内・質問への答え・作業の提案のために、AI を使います。AI への依頼は、すべて運営者の中継サーバー（<code>settomo.salfi.org</code>、Cloudflare Workers 上）を通り、そこから OpenRouter（OpenRouter, Inc.）を経て、AI のモデルの提供者（OpenAI、Anthropic など）に届きます。送るのは、次のものです。</p>
+<ul>
+  <li>作業に必要な指示と、利用者が入力した質問の文</li>
+  <li>機器の管理画面の文字と、管理画面の写真（1 回に 2 枚まで）</li>
+  <li>マニュアルを撮影して取り込むときの、ページの写真</li>
+  <li>マニュアルや問い合わせ先を探すときの、機器のメーカー名と機種名</li>
+</ul>
+<p>送る前に、管理画面が秘密として示す値（パスワード欄、Wi-Fi の鍵など）を隠します。ただし、管理画面には、つながっている機器の名前など、画面に出ている情報が写ることがあります。本アプリは、ログイン情報・パスワード・接続コードを AI に送りません。</p>
+<p>中継サーバーは、送られてきた文字・写真・質問・答えを保存しません。OpenRouter と各モデルの提供者は、それぞれのプライバシーポリシーに従って処理します（<a href="https://openrouter.ai/privacy">OpenRouter のプライバシーポリシー</a>）。</p>
+
+<h2>3. 中継サーバーが記録するもの</h2>
+<p>使いすぎを防ぐため、中継サーバーは、Cloudflare D1 のデータベースに次のものだけを記録します。</p>
+<table>
+  <tr><th>表</th><th>記録するもの</th><th>目的</th></tr>
+  <tr><td>機器（devices）</td><td>接続コードのハッシュ値（接続コードそのものは記録しません）、参加した日、停止したかどうか</td><td>招待で参加した端末を確かめる。停止する</td></tr>
+  <tr><td>利用量（usage）</td><td>上のハッシュ値の先頭 16 文字、日付、その日の依頼の回数と金額</td><td>端末ごと・1 日ごとの上限を守る</td></tr>
+  <tr><td>参加の回数</td><td>IP アドレスと日付を合わせたハッシュ値の先頭 16 文字と、その日の参加の回数（IP アドレスそのものは記録しません）</td><td>招待の合言葉の使い回しを防ぐ</td></tr>
+</table>
+<p>中継サーバーの動作の記録（ログ）には、受け口の名前、依頼の役割、大きさ（バイト数）、結果の番号、かかった時間、料金、端末の種別（「テスター」など）だけを残します。依頼の中身と接続コードは残しません。ログは Cloudflare の保存期間が過ぎると消えます。</p>
+<p>中継サーバーを置いている Cloudflare（Cloudflare, Inc.）は、通信を届けるため・攻撃を防ぐために、IP アドレスなどの通信の情報を、自社のポリシーに従って扱います（<a href="https://www.cloudflare.com/privacypolicy/">Cloudflare のプライバシーポリシー</a>）。</p>
+
+<h2>4. そのほかの通信</h2>
+<ul>
+  <li><strong>家庭内の機器</strong>: 同じネットワークにある機器の管理画面を開き、機器を探すために、家庭内のネットワークに接続します（iPhone・iPad では「ローカルネットワーク」の許可を求めます）。職場などの場所では、ゲートウェイ以外を探しません。</li>
+  <li><strong>マニュアル</strong>: マニュアルは、メーカーのサイトから端末が直接受け取ります。</li>
+  <li><strong>速さの計測</strong>: インターネットの速さを測るとき、iPhone・iPad は Cloudflare の公開の計測先（speed.cloudflare.com）と、Mac は macOS の計測機能（Apple のサーバー）と、データをやりとりします。家庭の情報は送りません。</li>
+  <li><strong>カメラ</strong>: 紙のマニュアルを撮影するときだけ使います（許可を求めます）。</li>
+</ul>
+
+<h2>5. 利用状況の計測・広告・追跡</h2>
+<p>利用状況の計測ツール、広告、他社のアプリやサイトをまたいだ追跡は、使っていません。</p>
+
+<h2>6. 先行テスト（TestFlight）</h2>
+<p>TestFlight で先行テストに参加すると、Apple は、利用者が送った感想・スクリーンショット・クラッシュの記録と、テスターとしての情報（招待に使ったメールアドレスなど）を運営者に渡します。これらは、不具合を直すためだけに使います（<a href="https://www.apple.com/legal/privacy/">Apple のプライバシーポリシー</a>）。</p>
+
+<h2>7. 消したいとき</h2>
+<p>端末の中の情報は、アプリを削除すると消えます。ログイン情報とバックアップは、アプリの中からも消せます。中継サーバーの記録は、利用者を特定できる形ではありませんが、消したいときは下の連絡先にご連絡ください。</p>
+
+<h2>8. 子どもの利用</h2>
+<p>本アプリは、機器を管理する大人のためのものです。子どもに向けたものではありません。</p>
+
+<h2>9. 変更</h2>
+<p>このポリシーを変更する場合は、このページを更新し、更新日を書き換えます。</p>
+
+<h2>10. 連絡先</h2>
+<p>運営者: Yuki Shiono（個人）／ メール: <a href="mailto:support@salfi.org">support@salfi.org</a></p>
+
+<hr>
+
+<h1>Settomo Privacy Policy</h1>
+<p class="meta">Last updated: 2026-10-31</p>
+<p>Settomo (the "App") helps you set up devices that have a web admin screen (routers, NAS, cameras, printers). This page explains what the App handles and where it goes. The App has no accounts and does not collect your name, email address, phone number, or location.</p>
+<h2>1. Stored only on your device</h2>
+<p>The following stay on your device and are never sent to the operator. They are deleted when you delete the App.</p>
+<ul>
+  <li><strong>Device logins</strong> (only if you choose to save them): in the Keychain on iPhone and iPad, and in the OS's encrypted store on Mac. Never given to the AI, logs, or reports.</li>
+  <li><strong>The relay connection code</strong>: in the Keychain (the OS's encrypted store on Mac).</li>
+  <li><strong>Your device list and the records of diagnoses and tasks</strong> (device names and addresses, settings read, values changed and their previous values, recovery cards).</li>
+  <li><strong>Settings backups</strong> your device hands over. Because they may contain Wi-Fi keys, on iPhone and iPad they are unreadable while the device is locked and excluded from iCloud and other backups.</li>
+  <li><strong>The text of manuals</strong> you import (from a PDF or a photographed page).</li>
+</ul>
+<h2>2. Sent to the AI (through the relay and OpenRouter)</h2>
+<p>The App uses AI to guide you on the screen, answer questions, and suggest tasks. Every AI request goes through the operator's relay (<code>settomo.salfi.org</code>, on Cloudflare Workers), then OpenRouter (OpenRouter, Inc.), to the model providers (OpenAI, Anthropic and others). What is sent:</p>
+<ul>
+  <li>Instructions for the task and the questions you type</li>
+  <li>The text of the device's admin screen and pictures of it (up to two per request)</li>
+  <li>Photos of manual pages, when you import a manual by photo</li>
+  <li>The device's maker and model name, when looking for its manual or support contact</li>
+</ul>
+<p>Before anything is sent, values the admin screen marks as secret (password fields, Wi-Fi keys and so on) are covered. Other information shown on the screen, such as the names of connected devices, may still appear. The App never sends logins, passwords, or the connection code to the AI.</p>
+<p>The relay does not store the text, pictures, questions, or answers that pass through it. OpenRouter and the model providers process them under their own privacy policies (<a href="https://openrouter.ai/privacy">OpenRouter Privacy Policy</a>).</p>
+<h2>3. What the relay records</h2>
+<p>To prevent overuse, the relay keeps only the following in a Cloudflare D1 database:</p>
+<ul>
+  <li><strong>Devices</strong>: a hash of the connection code (never the code itself), the day it joined, and whether it has been stopped — to recognize devices that joined with an invite and to stop them.</li>
+  <li><strong>Usage</strong>: the first 16 characters of that hash, the date, and the number and cost of that day's requests — to keep the per-device daily limits.</li>
+  <li><strong>Joins</strong>: the first 16 characters of a hash of the IP address and date, and that day's number of joins (never the IP address itself) — to stop an invite word from being reused at scale.</li>
+</ul>
+<p>The relay's logs keep only the endpoint, the request's role, its size in bytes, the result code, the time taken, the cost, and the kind of device (such as "tester"). Request contents and connection codes are never logged. Logs are deleted when Cloudflare's retention period ends.</p>
+<p>Cloudflare (Cloudflare, Inc.), which hosts the relay, handles network information such as IP addresses to deliver traffic and block attacks, under its own policy (<a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Privacy Policy</a>).</p>
+<h2>4. Other connections</h2>
+<ul>
+  <li><strong>Devices at home</strong>: the App connects to your local network to find devices and open their admin screens (iPhone and iPad ask for Local Network permission). At a workplace, only the gateway is looked up.</li>
+  <li><strong>Manuals</strong> are downloaded by your device directly from the maker's website.</li>
+  <li><strong>Speed tests</strong> exchange data with Cloudflare's public speed endpoint (speed.cloudflare.com) on iPhone and iPad, and with macOS's own measurement (Apple's servers) on Mac. Nothing about your home is sent.</li>
+  <li><strong>Camera</strong>: used only to photograph paper manuals (with your permission).</li>
+</ul>
+<h2>5. Analytics, advertising, and tracking</h2>
+<p>The App uses no analytics, no advertising, and no tracking across other companies' apps or websites.</p>
+<h2>6. Beta testing (TestFlight)</h2>
+<p>If you join the beta through TestFlight, Apple shares the feedback, screenshots, and crash reports you send, and your tester details (such as the email address used for the invitation), with the operator. They are used only to fix problems (<a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>).</p>
+<h2>7. Deleting your data</h2>
+<p>Data on your device is deleted when you delete the App; saved logins and backups can also be deleted inside the App. The relay's records do not identify you, but if you want them deleted, contact us below.</p>
+<h2>8. Children</h2>
+<p>The App is meant for adults who manage devices. It is not directed at children.</p>
+<h2>9. Changes</h2>
+<p>If this policy changes, this page and the date above will be updated.</p>
+<h2>10. Contact</h2>
+<p>Operator: Yuki Shiono (individual) / Email: <a href="mailto:support@salfi.org">support@salfi.org</a></p>
+<footer>運営者: Yuki Shiono（個人）／ 連絡先: <a href="mailto:support@salfi.org">support@salfi.org</a></footer>
+</body>
+</html>
