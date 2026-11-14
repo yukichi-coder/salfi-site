@@ -9,7 +9,7 @@
 <body>
 <nav><a href="../../">SALFI のアプリ</a> › <a href="../">Narably</a> › <a href="../support/">使い方とサポート / Support</a></nav>
 <h1>Narably プライバシーポリシー</h1>
-<p class="meta">最終更新: 2026-10-31<br>運営者: Yuki Shiono（個人）<br>お問い合わせ: <a href="mailto:support@salfi.org">support@salfi.org</a></p>
+<p class="meta">最終更新: 2026-11-14<br>運営者: Yuki Shiono（個人）<br>お問い合わせ: <a href="mailto:support@salfi.org">support@salfi.org</a></p>
 <p>Narably（以下「本アプリ」）には運営者のサーバーが無く、本アプリが運営者にデータを自動で送ることはありません。運営者が利用者の情報を受け取るのは、利用者が通報やお問い合わせのメールを送ったときだけです（下の「運営者が受け取る情報」）。</p>
 
 <h2>端末の中だけにあるもの</h2>
@@ -19,9 +19,10 @@
 </ul>
 <ul>
   <li>保存する会話は 50 件までで、それを超えると、ピン留めしていない古い会話から自動で消えます。</li>
-  <li>これらは運営者には自動で届かず、運営者は見ることができません。ただし、会話や設定は iPhone のバックアップ（iCloud やパソコン）に含まれることがあります。</li>
+  <li>これらは運営者には自動で届かず、運営者は見ることができません。会話や設定は iPhone のバックアップ（iCloud やパソコン）に含まれることがあります。鍵をかけた会話の中身は暗号文のまま入りますが、暗号の鍵はこの iPhone だけにあるため、バックアップから別の iPhone に戻すと読めません。機種変更の前に、鍵を外すか書き出してください。同じ iPhone に戻したときは読めます。</li>
   <li>アプリを削除すると、会話と設定は消えます。キーチェーンに入れた API キーは、アプリを削除しても端末に残ることがあるため、先に設定の「API キー」から消してください。キーそのものを使えなくするには、ollama.com でキーを削除してください。</li>
-  <li>会話の鍵（Face ID・パスコード）は、開くときに本人か確かめるためのもので、保存したデータを暗号化するものではありません。</li>
+  <li>鍵をかけた会話の中身は、この iPhone の中で暗号化して保存します（鍵はこの iPhone のキーチェーンだけ）。開くときは、これまでどおり Face ID かパスコードで本人か確かめます。</li>
+  <li>この暗号化は、端末のファイルやバックアップから中身を読まれることへの守りです。会話を開いている間は、中身は平文でメモリにあります。この iPhone を使えて Face ID かパスコードを通れる人は、鍵をかけた会話も開けます。一覧に出る件数・送り方・更新日時などは暗号化しません。ご自身で書き出したり、共有したり、Ollama に送った質問と答えには、この暗号は関係しません。この暗号化を入れる前に平文で保存していた中身の名残が、端末や以前のバックアップに残ることがあります。アプリから消す方法はありません。</li>
 </ul>
 
 <h2>会話の送り先（Ollama）</h2>
@@ -84,7 +85,7 @@
 
 <h1 lang="en">Narably Privacy Policy</h1>
 <div lang="en" id="en">
-<p class="meta">Last updated: 2026-10-31<br>Operator: Yuki Shiono (individual)<br>Contact: <a href="mailto:support@salfi.org">support@salfi.org</a></p>
+<p class="meta">Last updated: 2026-11-14<br>Operator: Yuki Shiono (individual)<br>Contact: <a href="mailto:support@salfi.org">support@salfi.org</a></p>
 <p>Narably (the "App") has no operator server, and the App never sends data to the operator automatically. The operator receives information about you only when you send a report or support email (see "What the operator receives" below).</p>
 <h2>Stored only on your device</h2>
 <ul>
@@ -93,9 +94,10 @@
 </ul>
 <ul>
   <li>Up to 50 conversations are kept. Beyond that, the oldest unpinned conversations are deleted automatically.</li>
-  <li>The operator never receives or sees them automatically. However, conversations and settings may be included in your iPhone backups (iCloud or a computer).</li>
+  <li>The operator never receives or sees them automatically. Conversations and settings may be included in your iPhone backups (iCloud or a computer). The contents of a locked chat are included only as ciphertext, and the encryption key stays on this iPhone, so a locked chat cannot be read if you restore the backup to a different iPhone. Before changing devices, turn off the lock or export the chat. Restoring to the same iPhone keeps it readable.</li>
   <li>Deleting the App deletes conversations and settings. The API key in the Keychain may remain on the device after the App is deleted, so remove it first under Settings → API key. To disable the key itself, delete it at ollama.com.</li>
-  <li>Locking a chat (Face ID or passcode) only checks it's you when opening it; it does not encrypt the saved data.</li>
+  <li>The contents of a locked chat are encrypted and stored on this iPhone (the encryption key stays only in this iPhone's Keychain). Opening it still uses Face ID or your passcode to confirm it's you.</li>
+  <li>This encryption protects against someone reading the contents from device files or backups. While a chat is open, its contents are in memory in plaintext. Anyone who can use this iPhone and pass Face ID or the passcode can open a locked chat. Visible details such as the number of chats, the mode, and the last-updated time are not encrypted. This encryption does not apply to chats you export or share, or to questions and answers sent to Ollama. If a locked chat was saved in plaintext before this encryption was added, remnants may remain on the device or in older backups. The App has no way to erase them.</li>
 </ul>
 <h2>Where conversations are sent (Ollama)</h2>
 <p>When you send a question, the following is sent directly from your device to Ollama (<a href="https://ollama.com">ollama.com</a>), to the AI models you choose, using the key you entered. It never passes through an operator server, and answers come back from Ollama directly to your device.</p>
