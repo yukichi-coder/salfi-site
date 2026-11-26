@@ -8,7 +8,7 @@ SALFI のアプリのサポート・プライバシーポリシー・利用規�
 - Fourgive: `fourgive/`（`support/`、`privacy/`、`terms/`）。シリーズではない単独のアプリなので、種類の階層は置かない
 - 契約書チェック準備AI: `keiyaku-check/`（`support/`、`terms/`、`privacy/`、`tokushoho/`＝特定商取引法に基づく表記）。単独のアプリなので種類の階層は置かない
 - Narably: `narably/`（`support/`、`privacy/`、`terms/`、`tokushoho/`）。単独のアプリ。アプリの購入画面が `https://apps.salfi.org/narably/terms/` と `/privacy/` を、設定が `/support/` も開く。値段はアメリカ基準の年 US$9.99（ほかの国は App Store の現地の値段）。サポートページの説明は narabe-chat の画面の文言と合わせる
-- 思考アニメ図鑑（Thinking Anime Library）: `thinking-anime-library/`（`support/`、`privacy/`、`takedown/`＝作品の掲載停止のご依頼）。単独のアプリ。アプリの設定が `/support/`、`/privacy/`、`/takedown/` を開く。プライバシーポリシーの元は private リポジトリ `thinking-anime-zukan` の `src/i18n/privacy-*.ts`（版 12）。各ページは日本語が先、その下に英語
+- 思考アニメ図鑑（Thinking Anime Library）: `thinking-anime-library/`（`support/`、`privacy/`、`takedown/`＝作品の掲載停止のご依頼）。単独のアプリ。公開 URL は `https://apps.salfi.org/thinking-anime-library/support/`、`https://apps.salfi.org/thinking-anime-library/privacy/`、`https://apps.salfi.org/thinking-anime-library/takedown/`。アプリの設定からこの 3 ページを開くリンクは追加中（まだリリースしていない）。プライバシーポリシーの元は private リポジトリ `thinking-anime-zukan` の `src/i18n/privacy-*.ts`（版 12）。各ページは日本語が先、その下に英語
 - 元の下書き（勝手にアイドル資格試験！）: private リポジトリ `katte-shikaku` の `docs/legal/`
 - 元の下書き（まほうのよみときドリル）: private リポジトリ `yomitoki-drill` の `site/`（正本。直すときは向こうを直して写す）
 - 元の下書き（契約書チェック準備AI）: private リポジトリ `keiyaku-check` の `docs/PRIVACY.md`（プライバシーポリシーの正本）と `docs/store/`
