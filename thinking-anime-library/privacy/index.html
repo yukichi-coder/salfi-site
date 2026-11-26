@@ -62,7 +62,7 @@
     </ul>
     <p>写真・声・位置などは保存しません。</p>
     <p>
-      アプリが自動で、作品を見たかどうかの記録を付けることはしません。しおりの「見た日」は、あなたが入れたものです。
+      アプリが自動で、作品を見たかどうかの記録を付けることはしません。再生しただけでは、見た記録は残りません。しおりを残すと、その画面に出ている「見た日」が記録されます（はじめは今日の日付が入っていて、あなたが変えられます）。
     </p>
     <p>
       これらの記録を、アプリから YouTube
@@ -85,8 +85,10 @@
       Vimeo で見る作品では、作品の画像の場所を Vimeo
       にたずねて、画像を読み込みます。作品を見る画面では、Vimeo
       の埋め込みプレイヤーを読み込みます。どちらのときも、端末や通信の基本的な情報が Vimeo
-      に送られます。再生は自動では始まりません。Vimeo のプレイヤーは、分析や追跡のための
-      Cookie を使わないように Vimeo に求める設定で読み込みます。この設定でも、Vimeo
+      に送られます。再生は自動では始まりません。Vimeo のプレイヤーは、Vimeo の「Do Not
+      Track」の指定（dnt=1）を付けて読み込みます。これは、Cookie
+      を含むセッションの情報の追跡と、視聴の統計（分析）の収集をしないように Vimeo
+      に求める指定です。この指定でも、Vimeo
       は、プレイヤーが動くために必要な Cookie を使うことがあります（<a
         href="https://vimeo.com/privacy"
         >Vimeo プライバシーポリシー</a
@@ -241,8 +243,9 @@
       </ul>
       <p>The app does not store photos, voice or location.</p>
       <p>
-        The app does not automatically keep a record of whether you watched a film. The "Date
-        watched" on a bookmark is the date you entered yourself.
+        The app does not automatically keep a record of whether you watched a film. Playing a film
+        does not by itself create a viewing record. When you save a bookmark, the app records the
+        "Date watched" shown on that screen (it starts as today's date, and you can change it).
       </p>
       <p>
         The app never sends these records to YouTube or to any other server. The operator does not
@@ -267,9 +270,10 @@
         For films shown with Vimeo, the app asks Vimeo where the film's image is and loads that
         image. On the screen for watching the film, the app loads the Vimeo embedded player. In
         both cases, basic information about your device and connection is sent to Vimeo. Playback
-        does not start by itself. The Vimeo player is loaded with a setting that asks Vimeo not to
-        use cookies for analytics or tracking. Even with this setting, Vimeo may still use cookies
-        that are needed for the player to work (see the
+        does not start by itself. The Vimeo player is loaded with Vimeo's "Do Not Track" parameter
+        (dnt=1), which asks Vimeo not to track session data, including cookies, and not to collect
+        viewing statistics (analytics). Even with this parameter, Vimeo may still use cookies that
+        are needed for the player to work (see the
         <a href="https://vimeo.com/privacy">Vimeo Privacy Policy</a>).
       </p>
       <p>
